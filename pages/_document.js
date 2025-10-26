@@ -51,6 +51,18 @@ class CustomDocument extends Document {
         <body>
           <Main></Main>
           <NextScript></NextScript>
+          <script
+            type="text/javascript"
+            src="https://www.googletagmanager.com/gtag/js?id=G-VPH95Z702B"
+            async
+          ></script>
+          <script
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html:
+                "window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        gtag('js', new Date());\n        gtag('config', 'G-VPH95Z702B');",
+            }}
+          ></script>
         </body>
       </Html>
     )

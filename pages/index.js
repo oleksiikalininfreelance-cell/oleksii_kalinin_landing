@@ -72,57 +72,59 @@ const Home = (props) => {
           </span>
           <span className="home-text23">Socials &amp; Contact</span>
           <div className="home-frame4">
-            <div className="home-group5">
-              <img
-                alt="instagramlogofacebook2svgrepocom1349"
-                src="/external/instagramlogofacebook2svgrepocom1349-awq9.svg"
-                className="home-instagramlogofacebook2svgrepocom1"
-              />
-              <a
-                href="https://www.instagram.com/olexiy_kalinin"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="home-text24"
-              >
-                @olexiy_kalinin
-              </a>
-            </div>
-            <div className="home-group6">
-              <img
-                alt="linkedinsvgrepocom1344"
-                src="/external/linkedinsvgrepocom1344-isk.svg"
-                className="home-linkedinsvgrepocom1"
-              />
-              <a
-                href="https://www.linkedin.com/in/олексій-калінін-02a255312/"
-                target="_blank"
-                rel="noreferrer noopener"
-                className="home-text25"
-              >
-                Oleksii Kalinin
-              </a>
-            </div>
-          </div>
-          <div className="home-group7">
-            <img
-              alt="email1573svgrepocom1354"
-              src="/external/email1573svgrepocom1354-d4x.svg"
-              className="home-email1573svgrepocom1"
-            />
             <a
-              href="mailto:oleksii.kalinin.freelance@gmail.com?subject="
-              className="home-text26"
+              href="https://www.instagram.com/olexiy_kalinin"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="home-link1"
             >
-              oleksii.kalinin.freelance@gmail.com
+              <div className="home-group5">
+                <img
+                  alt="instagramlogofacebook2svgrepocom1349"
+                  src="/external/instagramlogofacebook2svgrepocom1349-awq9.svg"
+                  className="home-instagramlogofacebook2svgrepocom1"
+                />
+                <span className="home-text24">@olexiy_kalinin</span>
+              </div>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/олексій-калінін-02a255312/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="home-link2"
+            >
+              <div className="home-group6">
+                <img
+                  alt="linkedinsvgrepocom1344"
+                  src="/external/linkedinsvgrepocom1344-isk.svg"
+                  className="home-linkedinsvgrepocom1"
+                />
+                <span className="home-text25">Oleksii Kalinin</span>
+              </div>
             </a>
           </div>
+          <a
+            href="mailto:oleksii.kalinin.freelance@gmail.com?subject="
+            className="home-link3"
+          >
+            <div className="home-group7">
+              <img
+                alt="email1573svgrepocom1354"
+                src="/external/email1573svgrepocom1354-d4x.svg"
+                className="home-email1573svgrepocom1"
+              />
+              <span className="home-text26">
+                oleksii.kalinin.freelance@gmail.com
+              </span>
+            </div>
+          </a>
           <img
             alt="Rectangle172"
             src="/external/rectangle172-58l-400h.png"
             className="home-rectangle1"
           />
         </div>
-        <a href="https://play.teleporthq.io/signup" className="home-link">
+        <a href="https://play.teleporthq.io/signup" className="home-link4">
           <div aria-label="Sign up to TeleportHQ" className="home-container2">
             <svg
               width="24"
@@ -484,6 +486,9 @@ const Home = (props) => {
             flex-shrink: 0;
             justify-content: space-between;
           }
+          .home-link1 {
+            display: contents;
+          }
           .home-group5 {
             width: 240px;
             height: 50px;
@@ -492,6 +497,7 @@ const Home = (props) => {
             transition: 0.3s;
             align-items: flex-start;
             flex-shrink: 1;
+            text-decoration: none;
           }
           .home-group5:hover {
             animation-name: pulse;
@@ -522,7 +528,9 @@ const Home = (props) => {
             font-weight: 500;
             line-height: normal;
             font-stretch: normal;
-            text-decoration: none;
+          }
+          .home-link2 {
+            display: contents;
           }
           .home-group6 {
             width: 227px;
@@ -532,6 +540,7 @@ const Home = (props) => {
             transition: 0.3s;
             align-items: flex-start;
             flex-shrink: 1;
+            text-decoration: none;
           }
           .home-group6:hover {
             animation-name: pulse;
@@ -562,7 +571,9 @@ const Home = (props) => {
             font-weight: 500;
             line-height: normal;
             font-stretch: normal;
-            text-decoration: none;
+          }
+          .home-link3 {
+            display: contents;
           }
           .home-group7 {
             top: 1377px;
@@ -574,6 +585,7 @@ const Home = (props) => {
             transition: 0.3s;
             align-items: flex-start;
             flex-shrink: 1;
+            text-decoration: none;
           }
           .home-group7:hover {
             animation-name: pulse;
@@ -604,7 +616,6 @@ const Home = (props) => {
             font-weight: 500;
             line-height: normal;
             font-stretch: normal;
-            text-decoration: none;
           }
           .home-rectangle1 {
             top: 74px;
@@ -617,7 +628,7 @@ const Home = (props) => {
             border-width: 8px;
             border-radius: 175px;
           }
-          .home-link {
+          .home-link4 {
             display: contents;
           }
           .home-container2 {

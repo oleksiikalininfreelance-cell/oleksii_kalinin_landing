@@ -11,7 +11,12 @@ const Home = (props) => {
           <title>Oleksii Kalinin</title>
           <meta property="og:title" content="Oleksii Kalinin" />
         </Head>
-        <div className="home-frame1">
+        <div
+          id="frame1"
+          overflowX="scroll"
+          overflowY="hidden"
+          className="home-frame1"
+        >
           <span className="home-text10">Oleksii Kalinin</span>
           <span className="home-text11">
             Low-Code Developer from Kharkiv, Ukraine
@@ -674,6 +679,9 @@ const Home = (props) => {
             }
           }
           @media (max-width: 479px) {
+            .home-frame1 {
+              overflow: scroll;
+            }
             .home-text10 {
               top: 18px;
               left: 10px;
@@ -728,7 +736,6 @@ const Home = (props) => {
               left: 5px;
               bottom: -29px;
               display: flex;
-              position: static;
               flex-direction: row;
             }
             .home-text22 {

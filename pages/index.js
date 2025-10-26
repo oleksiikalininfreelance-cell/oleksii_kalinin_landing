@@ -66,17 +66,30 @@ const Home = (props) => {
               <span className="home-text20">Speed</span>
             </div>
           </div>
-          <span className="home-text21">Projects</span>
-          <span className="home-text22">
+          <span className="home-text21">
             Soon I`ll share websites I’ve built with TeleportHQ
           </span>
-          <span className="home-text23">Socials &amp; Contact</span>
           <div className="home-frame4">
+            <a
+              href="mailto:oleksii.kalinin.freelance@gmail.com?subject="
+              className="home-link1"
+            >
+              <div className="home-group7">
+                <img
+                  alt="email1573svgrepocom1354"
+                  src="/external/email1573svgrepocom1354-d4x.svg"
+                  className="home-email1573svgrepocom1"
+                />
+                <span className="home-text22">
+                  oleksii.kalinin.freelance@gmail.com
+                </span>
+              </div>
+            </a>
             <a
               href="https://www.instagram.com/olexiy_kalinin"
               target="_blank"
               rel="noreferrer noopener"
-              className="home-link1"
+              className="home-link2"
             >
               <div className="home-group5">
                 <img
@@ -84,45 +97,32 @@ const Home = (props) => {
                   src="/external/instagramlogofacebook2svgrepocom1349-awq9.svg"
                   className="home-instagramlogofacebook2svgrepocom1"
                 />
-                <span className="home-text24">@olexiy_kalinin</span>
+                <span className="home-text23">@olexiy_kalinin</span>
               </div>
             </a>
             <a
               href="https://www.linkedin.com/in/олексій-калінін-02a255312/"
               target="_blank"
               rel="noreferrer noopener"
-              className="home-link2"
+              className="home-link3"
             >
               <div className="home-group6">
+                <span className="home-text24">Oleksii Kalinin</span>
                 <img
                   alt="linkedinsvgrepocom1344"
                   src="/external/linkedinsvgrepocom1344-isk.svg"
                   className="home-linkedinsvgrepocom1"
                 />
-                <span className="home-text25">Oleksii Kalinin</span>
               </div>
             </a>
           </div>
-          <a
-            href="mailto:oleksii.kalinin.freelance@gmail.com?subject="
-            className="home-link3"
-          >
-            <div className="home-group7">
-              <img
-                alt="email1573svgrepocom1354"
-                src="/external/email1573svgrepocom1354-d4x.svg"
-                className="home-email1573svgrepocom1"
-              />
-              <span className="home-text26">
-                oleksii.kalinin.freelance@gmail.com
-              </span>
-            </div>
-          </a>
           <img
             alt="Rectangle172"
             src="/external/rectangle172-58l-400h.png"
             className="home-rectangle1"
           />
+          <span className="home-text25">Projects</span>
+          <span className="home-text26">Socials &amp; Contact</span>
         </div>
         <a href="https://play.teleporthq.io/signup" className="home-link4">
           <div aria-label="Sign up to TeleportHQ" className="home-container2">
@@ -179,8 +179,9 @@ const Home = (props) => {
               rgba(74, 0, 93, 1) 50%,
               rgba(155, 0, 71, 1) 100%
             );
-            align-items: flex-start;
+            align-items: center;
             flex-shrink: 0;
+            justify-content: center;
           }
           .home-text10 {
             top: 74px;
@@ -428,22 +429,6 @@ const Home = (props) => {
             text-decoration: none;
           }
           .home-text21 {
-            top: 959px;
-            left: 264px;
-            color: rgba(217, 70, 126, 1);
-            width: 389px;
-            height: auto;
-            position: absolute;
-            font-size: 80px;
-            font-style: Bold;
-            text-align: left;
-            font-family: Inter;
-            font-weight: 700;
-            line-height: normal;
-            font-stretch: normal;
-            text-decoration: none;
-          }
-          .home-text22 {
             top: 1092px;
             left: 265px;
             color: rgba(179, 156, 208, 1);
@@ -459,22 +444,6 @@ const Home = (props) => {
             font-stretch: normal;
             text-decoration: none;
           }
-          .home-text23 {
-            top: 1161px;
-            left: 265px;
-            color: rgba(217, 70, 126, 1);
-            width: 709px;
-            height: auto;
-            position: absolute;
-            font-size: 80px;
-            font-style: Bold;
-            text-align: left;
-            font-family: Inter;
-            font-weight: 700;
-            line-height: normal;
-            font-stretch: normal;
-            text-decoration: none;
-          }
           .home-frame4 {
             gap: 222px;
             top: 1286px;
@@ -484,9 +453,55 @@ const Home = (props) => {
             position: absolute;
             align-items: center;
             flex-shrink: 0;
-            justify-content: space-between;
+            justify-content: flex-start;
           }
           .home-link1 {
+            display: contents;
+          }
+          .home-group7 {
+            top: 1377px;
+            left: 277px;
+            width: 488px;
+            height: 50px;
+            display: flex;
+            position: absolute;
+            transition: 0.3s;
+            align-items: center;
+            flex-shrink: 1;
+            justify-content: center;
+            text-decoration: none;
+          }
+          .home-group7:hover {
+            animation-name: pulse;
+            animation-delay: 0s;
+            animation-duration: 300ms;
+            animation-direction: normal;
+            animation-iteration-count: 2;
+            animation-timing-function: ease;
+          }
+          .home-email1573svgrepocom1 {
+            top: 0px;
+            left: 0px;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+          }
+          .home-text22 {
+            top: 7px;
+            left: 61px;
+            color: rgba(179, 156, 208, 1);
+            width: 427px;
+            height: auto;
+            position: absolute;
+            font-size: 25px;
+            font-style: Medium;
+            text-align: left;
+            font-family: Inter;
+            font-weight: 500;
+            line-height: normal;
+            font-stretch: normal;
+          }
+          .home-link2 {
             display: contents;
           }
           .home-group5 {
@@ -514,7 +529,7 @@ const Home = (props) => {
             height: 50px;
             position: absolute;
           }
-          .home-text24 {
+          .home-text23 {
             top: 10px;
             left: 50px;
             color: rgba(179, 156, 208, 1);
@@ -529,7 +544,7 @@ const Home = (props) => {
             line-height: normal;
             font-stretch: normal;
           }
-          .home-link2 {
+          .home-link3 {
             display: contents;
           }
           .home-group6 {
@@ -538,8 +553,9 @@ const Home = (props) => {
             display: flex;
             position: relative;
             transition: 0.3s;
-            align-items: flex-start;
+            align-items: flex-end;
             flex-shrink: 1;
+            justify-content: flex-start;
             text-decoration: none;
           }
           .home-group6:hover {
@@ -550,14 +566,7 @@ const Home = (props) => {
             animation-iteration-count: 2;
             animation-timing-function: ease;
           }
-          .home-linkedinsvgrepocom1 {
-            top: 0px;
-            left: 0px;
-            width: 50px;
-            height: 50px;
-            position: absolute;
-          }
-          .home-text25 {
+          .home-text24 {
             top: 18px;
             left: 57px;
             color: rgba(179, 156, 208, 1);
@@ -572,50 +581,12 @@ const Home = (props) => {
             line-height: normal;
             font-stretch: normal;
           }
-          .home-link3 {
-            display: contents;
-          }
-          .home-group7 {
-            top: 1377px;
-            left: 277px;
-            width: 488px;
-            height: 50px;
-            display: flex;
-            position: absolute;
-            transition: 0.3s;
-            align-items: flex-start;
-            flex-shrink: 1;
-            text-decoration: none;
-          }
-          .home-group7:hover {
-            animation-name: pulse;
-            animation-delay: 0s;
-            animation-duration: 300ms;
-            animation-direction: normal;
-            animation-iteration-count: 2;
-            animation-timing-function: ease;
-          }
-          .home-email1573svgrepocom1 {
+          .home-linkedinsvgrepocom1 {
             top: 0px;
             left: 0px;
             width: 50px;
             height: 50px;
             position: absolute;
-          }
-          .home-text26 {
-            top: 7px;
-            left: 61px;
-            color: rgba(179, 156, 208, 1);
-            width: 427px;
-            height: auto;
-            position: absolute;
-            font-size: 25px;
-            font-style: Medium;
-            text-align: left;
-            font-family: Inter;
-            font-weight: 500;
-            line-height: normal;
-            font-stretch: normal;
           }
           .home-rectangle1 {
             top: 74px;
@@ -627,6 +598,38 @@ const Home = (props) => {
             border-style: solid;
             border-width: 8px;
             border-radius: 175px;
+          }
+          .home-text25 {
+            top: 959px;
+            left: 264px;
+            color: rgba(217, 70, 126, 1);
+            width: 389px;
+            height: auto;
+            position: absolute;
+            font-size: 80px;
+            font-style: Bold;
+            text-align: left;
+            font-family: Inter;
+            font-weight: 700;
+            line-height: normal;
+            font-stretch: normal;
+            text-decoration: none;
+          }
+          .home-text26 {
+            top: 1161px;
+            left: 265px;
+            color: rgba(217, 70, 126, 1);
+            width: 709px;
+            height: auto;
+            position: absolute;
+            font-size: 80px;
+            font-style: Bold;
+            text-align: left;
+            font-family: Inter;
+            font-weight: 700;
+            line-height: normal;
+            font-stretch: normal;
+            text-decoration: none;
           }
           .home-link4 {
             display: contents;
@@ -661,13 +664,105 @@ const Home = (props) => {
             line-height: 24px;
           }
           @media (max-width: 1400px) {
-            .home-text26 {
+            .home-text22 {
               color: rgb(179, 156, 208);
               font-size: 25px;
               font-family: Inter;
               font-weight: 500;
               line-height: normal;
               text-decoration: none;
+            }
+          }
+          @media (max-width: 479px) {
+            .home-text10 {
+              top: 18px;
+              left: 10px;
+              right: 63px;
+            }
+            .home-text11 {
+              left: 10px;
+            }
+            .home-text12 {
+              left: 10px;
+              width: 460px;
+            }
+            .home-text13 {
+              left: 10px;
+              width: 460px;
+            }
+            .home-text14 {
+              top: 577px;
+              left: 10px;
+            }
+            .home-text15 {
+              left: 10px;
+              width: 460px;
+            }
+            .home-frame3 {
+              top: 932px;
+              left: 10px;
+              width: 460px;
+              display: block;
+            }
+            .home-text21 {
+              top: 1250px;
+              left: 10px;
+              width: 460px;
+            }
+            .home-frame4 {
+              gap: var(--dl-layout-space-halfunit);
+              top: 1504px;
+              left: 10px;
+              right: -1px;
+              width: 460px;
+              height: 199px;
+              display: grid;
+              margin-top: 0px;
+              place-items: start;
+              margin-bottom: 0px;
+              grid-template-rows: 1fr 1fr;
+              grid-template-columns: 1fr;
+            }
+            .home-group7 {
+              top: 1514px;
+              left: 5px;
+              bottom: -29px;
+              display: flex;
+              position: static;
+              flex-direction: row;
+            }
+            .home-text22 {
+              color: rgb(179, 156, 208);
+              font-size: 20px;
+              text-align: left;
+              font-family: Inter;
+              font-weight: 500;
+              line-height: normal;
+            }
+            .home-text24 {
+              color: rgb(179, 156, 208);
+              right: -5px;
+              bottom: 1px;
+              font-size: 25px;
+              font-family: Inter;
+              font-weight: 500;
+              line-height: normal;
+            }
+            .home-rectangle1 {
+              top: 5px;
+              left: 300px;
+              width: 150px;
+              height: 150px;
+            }
+            .home-text25 {
+              top: 1145px;
+              left: 10px;
+            }
+            .home-text26 {
+              top: 1303px;
+              left: 10px;
+              right: 1px;
+              width: 460px;
             }
           }
         `}

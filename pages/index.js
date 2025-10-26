@@ -732,7 +732,7 @@ const Home = (props) => {
               grid-template-columns: 1fr;
             }
             .home-group7 {
-              top: 1514px;
+              top: 200px;
               left: 5px;
               bottom: -29px;
               display: flex;
